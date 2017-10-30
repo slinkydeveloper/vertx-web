@@ -8,7 +8,11 @@ import io.vertx.ext.web.router.impl.BaseConcurrentRoutingNode;
  */
 public interface ConcurrentRoutingTree {
 
-  @Fluent ConcurrentRoutingTree addRoute(Route route);
+  @Fluent ConcurrentRoutingTree addStringRoute(Route route);
+
+  @Fluent ConcurrentRoutingTree addRegexRoute(Route route);
+
+  @Fluent ConcurrentRoutingTree addParametrizedRoute(Route route);
 
   ConcurrentRoutingTreeWalker walker(String requestUrl);
 

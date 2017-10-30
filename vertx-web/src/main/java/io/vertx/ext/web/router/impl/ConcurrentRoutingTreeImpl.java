@@ -16,7 +16,18 @@ public class ConcurrentRoutingTreeImpl implements ConcurrentRoutingTree {
   }
 
   @Override
-  public ConcurrentRoutingTree addRoute(Route route) {
+  public ConcurrentRoutingTree addStringRoute(Route route) {
+    return null;
+  }
+
+  @Override
+  public ConcurrentRoutingTree addRegexRoute(Route route) {
+    return null;
+  }
+
+  @Override
+  public ConcurrentRoutingTree addParametrizedRoute(Route route) {
+    //TODO Convert vertx style/RFC6570 (not required for now) route to regex and call addRegexRoute
     return null;
   }
 
